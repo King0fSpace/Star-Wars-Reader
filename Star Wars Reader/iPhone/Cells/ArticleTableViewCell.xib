@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ArticleTableViewCell" rowHeight="210" id="KGk-i7-Jjw" customClass="ArticleTableViewCell" customModule="Star_Wars_Reader" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="210"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="343" height="210"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="placeholder_nomoon" translatesAutoresizingMaskIntoConstraints="NO" id="2Vh-Ce-rc0">
+                        <rect key="frame" x="0.0" y="0.0" width="343" height="210"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPE-Lw-4Yo">
+                        <rect key="frame" x="24" y="36" width="295" height="18"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZlB-Oh-lQ6">
+                        <rect key="frame" x="24" y="61" width="295" height="33.666666666666657"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="28"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A2a-gh-Cty">
+                        <rect key="frame" x="24" y="110.66666666666667" width="295" height="18.000000000000014"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Preview Preview Preview Preview Preview Preview Preview Preview Preview Preview" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="peY-GO-4zT">
+                        <rect key="frame" x="24" y="135.66666666666666" width="295" height="40.666666666666657"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="2Vh-Ce-rc0" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="2fn-KU-yIN"/>
+                    <constraint firstAttribute="trailing" secondItem="iPE-Lw-4Yo" secondAttribute="trailing" constant="24" id="9fz-kj-wHq"/>
+                    <constraint firstItem="ZlB-Oh-lQ6" firstAttribute="top" secondItem="iPE-Lw-4Yo" secondAttribute="bottom" constant="7" id="Mpb-dP-IFf"/>
+                    <constraint firstItem="peY-GO-4zT" firstAttribute="top" secondItem="A2a-gh-Cty" secondAttribute="bottom" constant="7" id="Uhu-iA-T0h"/>
+                    <constraint firstItem="ZlB-Oh-lQ6" firstAttribute="leading" secondItem="iPE-Lw-4Yo" secondAttribute="leading" id="VTu-Gv-wjo"/>
+                    <constraint firstItem="peY-GO-4zT" firstAttribute="leading" secondItem="A2a-gh-Cty" secondAttribute="leading" id="bgp-Ju-bO7"/>
+                    <constraint firstAttribute="bottom" secondItem="2Vh-Ce-rc0" secondAttribute="bottom" id="eYB-Ng-Xft"/>
+                    <constraint firstItem="iPE-Lw-4Yo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="36" id="g3e-02-VUe"/>
+                    <constraint firstItem="iPE-Lw-4Yo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="24" id="iuh-5S-79H"/>
+                    <constraint firstItem="2Vh-Ce-rc0" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jRQ-Qn-JFK"/>
+                    <constraint firstAttribute="trailing" secondItem="2Vh-Ce-rc0" secondAttribute="trailing" id="jyR-A7-uqQ"/>
+                    <constraint firstItem="A2a-gh-Cty" firstAttribute="trailing" secondItem="ZlB-Oh-lQ6" secondAttribute="trailing" id="kR7-I2-mKa"/>
+                    <constraint firstAttribute="bottom" secondItem="peY-GO-4zT" secondAttribute="bottom" constant="33.666666666666686" id="kfJ-Bs-9Sf"/>
+                    <constraint firstItem="A2a-gh-Cty" firstAttribute="leading" secondItem="ZlB-Oh-lQ6" secondAttribute="leading" id="mTg-yD-eO6"/>
+                    <constraint firstItem="ZlB-Oh-lQ6" firstAttribute="trailing" secondItem="iPE-Lw-4Yo" secondAttribute="trailing" id="qft-ZD-6qN"/>
+                    <constraint firstItem="A2a-gh-Cty" firstAttribute="top" secondItem="ZlB-Oh-lQ6" secondAttribute="bottom" constant="16" id="vMk-n8-Dzc"/>
+                    <constraint firstItem="peY-GO-4zT" firstAttribute="trailing" secondItem="A2a-gh-Cty" secondAttribute="trailing" id="z7F-mX-AMu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="articleImageView" destination="2Vh-Ce-rc0" id="vPF-HK-pXz"/>
+                <outlet property="dateLabel" destination="iPE-Lw-4Yo" id="Laf-kP-sSr"/>
+                <outlet property="locationLabel" destination="A2a-gh-Cty" id="gPf-rt-jD7"/>
+                <outlet property="previewLabel" destination="peY-GO-4zT" id="L6f-pS-EXv"/>
+                <outlet property="titleLabel" destination="ZlB-Oh-lQ6" id="BxY-F6-al5"/>
+            </connections>
+            <point key="canvasLocation" x="139.69465648854961" y="20.422535211267608"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="placeholder_nomoon" width="120" height="70.666664123535156"/>
+    </resources>
+</document>
